@@ -4,6 +4,7 @@ export interface JobListing{
     roleName: string;
     city: string;
     country: string;
+    jobType: string;
     aboutCompany: string;
     aboutRole: string;
     skills: string[];

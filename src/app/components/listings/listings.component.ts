@@ -4,11 +4,12 @@ import { JobListing } from '../../jobListing';
 import { RouterModule } from '@angular/router';
 import { JobsService } from '../../services/jobs.service';
 import { PaginationComponent } from '../pagination/pagination.component';
+import { FilterComponent } from '../filter/filter.component';
 
 @Component({
   selector: 'app-listings',
   standalone: true,
-  imports: [CommonModule, RouterModule, PaginationComponent],
+  imports: [CommonModule, RouterModule, PaginationComponent, FilterComponent],
   templateUrl: './listings.component.html',
   styleUrl: './listings.component.css'
 })

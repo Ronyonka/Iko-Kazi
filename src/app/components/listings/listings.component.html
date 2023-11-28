@@ -1,35 +1,4 @@
-<ul class="nav justify-content-end">
-  <li class="nav-item dropdown">
-    <a class="nav-link active dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Company Name</a>
-    <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Action</a></li>
-      <li><a class="dropdown-item" href="#">Another action</a></li>
-      <li><a class="dropdown-item" href="#">Something else here</a></li>
-      <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="#">Separated link</a></li>
-    </ul>
-  </li>
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Job Type</a>
-    <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Action</a></li>
-      <li><a class="dropdown-item" href="#">Another action</a></li>
-      <li><a class="dropdown-item" href="#">Something else here</a></li>
-      <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="#">Separated link</a></li>
-    </ul>
-  </li>
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Location</a>
-    <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Action</a></li>
-      <li><a class="dropdown-item" href="#">Another action</a></li>
-      <li><a class="dropdown-item" href="#">Something else here</a></li>
-      <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="#">Separated link</a></li>
-    </ul>
-  </li>
-</ul>
+<app-filter></app-filter>
 
 @for (job of paginatedData; track job.id){
   <br>
@@ -39,8 +8,10 @@
         </div>
         <div class="card-body">
           <h5 class="card-title">{{job.roleName}}</h5>
-          <p class="card-text">{{job.city}}, {{job.country}}</p>
-          <a [routerLink]="['/job-description', job.id]" class="btn btn-primary">Learn More</a>
+          <p class="card-text">{{job.city}}, {{job.country}} | {{job.jobType}}</p>
+          <br>
+          <p>{{job.aboutRole}}</p>
+          <a [routerLink]="['/job-description', job.id]" class="btn btn-outline-secondary">Learn More</a>
         </div>
       </div>
       <br>

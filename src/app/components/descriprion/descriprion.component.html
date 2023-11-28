@@ -1,29 +1,35 @@
 
-<h3>{{job?.companyName}}</h3>
-<h2>{{job?.roleName}}</h2>
-<p>{{job?.city}}, {{job?.country}}</p>
 <br>
-<h4>About Company</h4>
+<nav class="navbar bg-light">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1">{{job?.companyName}}</span>
+    </div>
+  </nav>
+<br>
+<h3><b>{{job?.roleName}}</b></h3>
+<p>{{job?.city}}, {{job?.country}} | {{job?.jobType}}</p> 
+<br>
+<h4><b>About Company</b></h4>
 <p>{{job?.aboutCompany}}</p>
 <br>
-<h4>About The Role</h4>
+<h4><b>About The Role</b></h4>
 <p>{{job?.aboutRole}}</p>
 <br>
-<h4>Responsibilities</h4>
+<h4><b>Responsibilities</b></h4>
 <ul>
     @for (responsibility of job?.responsibilities; track job?.id){
 <li>{{responsibility}}</li>
     }
 </ul>
 <br>
-<h4>Required Skills & Qualifications</h4>
+<h4><b>Required Skills & Qualifications</b></h4>
 <ul>
     @for (skill of job?.skills; track job?.id){
 <li>{{skill}}</li>
     }
 </ul>
 <br>
-<h4>Nice to Have</h4>
+<h4><b>Nice to Have</b></h4>
 <ul>
     @for (nicetohave of job?.niceToHave; track job?.id){
 <li>{{nicetohave}}</li>
