@@ -84,11 +84,14 @@
   }
 
 }
-<app-pagination 
+@if(!hidePagination){
+  <app-pagination 
   [totalItems]="totalItems"
   [itemsPerPage]="itemsPerPage"
   [currentPage]="currentPage"
   (onClick)="changePage($event)"
   ></app-pagination>
+}
+
 
 </div>

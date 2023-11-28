@@ -19,6 +19,7 @@ export class ListingsComponent {
     itemsPerPage = 7;
     currentPage= 1;
     totalItems = 7;
+    hidePagination=false;
     jobs: any[] = [];
     jobsService: JobsService = inject(JobsService);
     // Filters
@@ -65,15 +66,17 @@ export class ListingsComponent {
 
       if (this.locationFilter) {
         filteredJobs = filteredJobs.filter(job => job.city === this.locationFilter);
+        this.itemsPerPage = filteredJobs.length
       }
       if (this.jobTypeFilter){
         filteredJobs =  filteredJobs.filter(job => job.jobType === this.jobTypeFilter);
+        this.itemsPerPage = filteredJobs.length
       }
       if (this.companyNameFilter) {
         filteredJobs = filteredJobs.filter(job => job.companyName === this.companyNameFilter);
+        this.itemsPerPage = filteredJobs.length
       }
 
-      this.totalItems = filteredJobs.length; 
       const start = (this.currentPage -1)* (this.itemsPerPage)
       const end = start + this.itemsPerPage
 
@@ -83,6 +86,8 @@ export class ListingsComponent {
 
     onSearchTextEntered(searchValue: string){
       this.searchText = searchValue;
+      this.itemsPerPage = this.jobs.length
+      this.hidePagination = true;
       // console.log(this.searchText);
     }
     changePage(page: number){
