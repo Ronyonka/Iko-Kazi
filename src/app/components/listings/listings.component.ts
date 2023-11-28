@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { JobListing } from '../../jobListing';
 import { RouterModule } from '@angular/router';
 import { JobsService } from '../../services/jobs.service';
+import { HeaderComponent } from '../header/header.component';
 import { PaginationComponent } from '../pagination/pagination.component';
 import { FilterComponent } from '../filter/filter.component';
 import { FormsModule } from '@angular/forms';
@@ -10,7 +11,7 @@ import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'app-listings',
   standalone: true,
-  imports: [CommonModule, RouterModule, PaginationComponent, FilterComponent, FormsModule],
+  imports: [CommonModule, RouterModule, HeaderComponent, PaginationComponent, FilterComponent, FormsModule],
   templateUrl: './listings.component.html',
   styleUrl: './listings.component.css'
 })
@@ -31,6 +32,10 @@ export class ListingsComponent {
 
     // Sorting
     selectedSortOption: string | null = null;
+
+    //Search
+    searchText: string = '';
+
 
     constructor(){
       this.jobs = this.jobsService.getAllJobListings();
@@ -76,6 +81,10 @@ export class ListingsComponent {
 
     }
 
+    onSearchTextEntered(searchValue: string){
+      this.searchText = searchValue;
+      // console.log(this.searchText);
+    }
     changePage(page: number){
       this.currentPage = page;
     }
