@@ -1,12 +1,12 @@
-@for (job of jobs; track job.companyId){
+@for (job of jobs; track job.id){
     <div class="card">
         <div class="card-header">
             {{job.companyName}} 
         </div>
         <div class="card-body">
-          <h5 class="card-title">{{job.role}}</h5>
-          <p class="card-text">{{job.location}}</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <h5 class="card-title">{{job.roleName}}</h5>
+          <p class="card-text">{{job.city}}, {{job.country}}</p>
+          <a [routerLink]="['/job-description', job.id]" class="btn btn-primary">Learn More</a>
         </div>
       </div>
 }

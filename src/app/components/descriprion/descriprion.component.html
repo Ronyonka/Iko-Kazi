@@ -1,0 +1,32 @@
+
+<h3>{{job?.companyName}}</h3>
+<h2>{{job?.roleName}}</h2>
+<p>{{job?.city}}, {{job?.country}}</p>
+<br>
+<h4>About Company</h4>
+<p>{{job?.aboutCompany}}</p>
+<br>
+<h4>About The Role</h4>
+<p>{{job?.aboutRole}}</p>
+<br>
+<h4>Responsibilities</h4>
+<ul>
+    @for (responsibility of job?.responsibilities; track job?.id){
+<li>{{responsibility}}</li>
+    }
+</ul>
+<br>
+<h4>Required Skills & Qualifications</h4>
+<ul>
+    @for (skill of job?.skills; track job?.id){
+<li>{{skill}}</li>
+    }
+</ul>
+<br>
+<h4>Nice to Have</h4>
+<ul>
+    @for (nicetohave of job?.niceToHave; track job?.id){
+<li>{{nicetohave}}</li>
+    }
+</ul>
+

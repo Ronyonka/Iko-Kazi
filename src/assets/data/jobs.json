@@ -1,82 +1,232 @@
-{
-    "jobListings": [
-        {
-          "companyId": 1001,
-          "companyName": "Tech Innovators Inc.",
-          "role": "Software Engineer",
-          "location": "San Francisco, CA",
-          "jobDescription": {
-            "roleDescription": "Join our dynamic team as a Software Engineer and contribute to cutting-edge projects.",
-            "qualifications": [
-              "Bachelor's degree in Computer Science or related field",
-              "3+ years of experience in software development",
-              "Strong proficiency in JavaScript and Angular",
-              "Excellent problem-solving skills"
-            ],
-            "responsibilities": [
-              "Design and implement scalable software solutions",
-              "Collaborate with cross-functional teams",
-              "Troubleshoot and debug issues",
-              "Contribute to code reviews"
-            ],
-            "niceToHave": [
-              "Experience with cloud technologies",
-              "Knowledge of DevOps practices",
-              "Familiarity with UX/UI design principles"
-            ]
-          }
-        },
-        {
-          "companyId": 1002,
-          "companyName": "Data Insights Co.",
-          "role": "Data Analyst",
-          "location": "Seattle, WA",
-          "jobDescription": {
-            "roleDescription": "Seeking a Data Analyst to analyze and interpret data, providing valuable insights to drive business decisions.",
-            "qualifications": [
-              "Bachelor's degree in Statistics, Mathematics, or related field",
-              "Experience with data visualization tools",
-              "Strong analytical and problem-solving skills",
-              "Proficiency in SQL and Excel"
-            ],
-            "responsibilities": [
-              "Collect and analyze data from various sources",
-              "Create visualizations and reports",
-              "Collaborate with stakeholders to define data requirements",
-              "Present findings to key decision-makers"
-            ],
-            "niceToHave": [
-              "Experience with business intelligence tools",
-              "Knowledge of data warehousing concepts",
-              "Programming skills in Python or R"
-            ]
-          }
-        },
-        {
-          "companyId": 1003,
-          "companyName": "EcoTech Solutions Ltd.",
-          "role": "Environmental Scientist",
-          "location": "Portland, OR",
-          "jobDescription": {
-            "roleDescription": "Exciting opportunity for an Environmental Scientist to contribute to ecological research and conservation.",
-            "qualifications": [
-              "Master's degree in Environmental Science or related field",
-              "Fieldwork experience in ecology and biodiversity studies",
-              "Data analysis skills using statistical software",
-              "Strong written and verbal communication skills"
-            ],
-            "responsibilities": [
-              "Conduct field surveys and experiments",
-              "Analyze and interpret ecological data",
-              "Collaborate with research teams",
-              "Contribute to scientific publications"
-            ],
-            "niceToHave": [
-              "Experience with GIS and remote sensing",
-              "Knowledge of environmental modeling",
-              "Passion for conservation efforts"
-            ]
-          }
-        }
-    ]
+{ "jobListings" :
+    [
+    {
+      "id": 1,
+      "companyName": "SafariCom",
+      "roleName": "Full Stack Developer",
+      "city": "Nairobi",
+      "country": "Kenya", 
+      "aboutCompany": "SafariCom is a leading telecommunications company in East Africa, providing mobile and internet services to millions of customers. With headquarters in Nairobi, SafariCom employs over 5000 people across Kenya and plans to expand services to neighboring countries soon.",
+      "aboutRole": "We are looking for a Full Stack Developer to join our growing product team. The role will be responsible for building new customer-focused products and enhancing existing ones using latest web technologies.", 
+      "skills": ["JavaScript", "Node.js", "React"],
+      "responsibilities": ["Design and implement visual elements", "Integrate API services", "Write test cases"],
+      "niceToHave": ["Experience with React Native", "Cloud platform knowledge"]
+    },
+    {
+      "id": 2,
+      "companyName": "Jumia",
+      "roleName": "Frontend Engineer", 
+      "city": "Nairobi",
+      "country": "Kenya",
+      "aboutCompany": "Jumia is Africa's leading ecommerce platform, connecting vendors and consumers. With operations across most countries in Africa, Jumia aims to improve everyday lives by leveraging technology and ecommerce.",
+      "aboutRole": "We're looking for a talented Frontend Engineer to join our team in building the future of ecommerce in Africa. The role offers the opportunity to make an impact on a uniquely African technology challenge.",
+      "skills": ["React", "Redux", "Styled Components"],
+      "responsibilities": ["Implement pixel-perfect UI designs", "Create reusable component libraries", "Ensure web accessibility compliance"], 
+      "niceToHave": ["Experience with Next.js", "Familiarity with ecommerce domain"]
+    },
+    {
+      "id": 3,
+      "companyName": "SafeBoda",
+      "roleName": "Backend Engineer",
+      "city": "Kampala",
+      "country": "Uganda",
+      "aboutCompany": "SafeBoda is Uganda's leading ride-hailing and delivery platform. We aim to provide safe and affordable transportation for millions in Uganda through our rider platform and mobile apps.", 
+      "aboutRole": "We are seeking an exceptional Backend Engineer to join our team in Kampala. You will be at the forefront of solving complex problems that affect millions of SafeBoda users daily.",
+      "skills": ["Node.js", "MongoDB", "Microservices"],
+      "responsibilities": ["Design scalable APIs", "Optimize database queries", "Implement security best practices"],
+      "niceToHave": ["Experience with Kubernetes", "Payment integration knowledge"] 
+    },
+    {
+      "id": 4,
+      "companyName": "TZ Bank",
+      "roleName": "QA Engineer",
+      "city": "Dar es Salaam",
+      "country": "Tanzania",
+      "aboutCompany": "TZ Bank is Tanzania's most innovative bank, serving individual and enterprise customers through digitized banking products. Our mission is financial inclusion for all Tanzanians.",
+      "aboutRole": "We are looking for a quality-focused QA Engineer to put our digital banking products to test before launch. The role offers great opportunities to build expertise in the fintech domain.",
+      "skills": ["Manual testing", "SQL", "Scrum"],
+      "responsibilities": ["Review requirements and identify defects","Log and track issues", "Create test plans"],
+      "niceToHave": ["Automation testing knowledge", "Banking domain experience"]
+    },
+    {
+      "id": 5,
+      "companyName": "HeHe Foods", 
+      "roleName": "DevOps Engineer",
+      "city": "Kigali",
+      "country": "Rwanda",  
+      "aboutCompany": "HeHe Foods operates Rwanda's most popular online restaurant platform. With just a few clicks, our customers can order meals from hundreds of affiliated restaurants in Kigali with quick delivery options.",
+      "aboutRole": "We are seeking a DevOps Engineer to help build and manage infrastructure for our online platform and mobile app used by thousands daily across Kigali.",
+      "skills": ["AWS", "Docker", "CI/CD"],
+      "responsibilities": ["Configure and monitor cloud servers", "Automate deployments","Troubleshoot issues"],
+      "niceToHave": ["Experience with Terraform", "Interest in the food industry"]
+    },
+    {
+      "id": 6,
+      "companyName": "Twiga Markets",
+      "roleName": "Blockchain Developer",
+      "city": "Nairobi",  
+      "country": "Kenya",
+      "aboutCompany": "Twiga Markets operates a B2B food supply platform to connect farmers to vendors across Kenya, providing transparency and efficiency for all parties through clever use of technology.",
+      "aboutRole": "We are seeking to build some blockchain-based solutions for supply chain traceability and financing. As Blockchain Developer, you will help design decentralized apps to be used on our platform.", 
+      "skills": ["Solidity", "Hyperledger", "Ethereum"],
+      "responsibilities": ["Design smart contracts", "Develop blockchain APIs", "Write efficient algorithms"], 
+      "niceToHave": ["Cloud architecture knowledge", "Agricultural tech experience"] 
+    },
+    {
+      "id": 7,
+      "companyName": "PEAS Ltd.",
+      "roleName": "Machine Learning Engineer",
+      "city": "Nairobi",
+      "country": "Kenya",
+      "aboutCompany": "PEAS develops autonomous technology solutions for emerging economies by leveraging the power of artificial intelligence and machine learning.",
+      "aboutRole": "We seek a Machine Learning Engineer to join our product team. You will develop ML models and algorithms for use in our products, from prototyping to production deployment.",
+      "skills": ["Python", "Scikit-learn", "TensorFlow"], 
+      "responsibilities": ["Implement machine learning algorithms", "Perform model optimization","Evaluate models"],
+      "niceToHave": ["Experience with cloud ML services (AWS/GCP)", "Computer vision knowledge"]
+    },
+    {
+      "id": 8,
+      "companyName": "Farmer's Choice Ltd",  
+      "roleName": "Data Analyst",
+      "city": "Nairobi",
+      "country": "Kenya",  
+      "aboutCompany": "Farmer's Choice is East Africa's leading agricultural commodities supplier, connecting thousands of farmers to global markets. Our operations span food processing, logistics, exports and trade financing across the region.",
+      "aboutRole": "We are looking for a data-savvy analyst to derive insights from our supply chain datasets that could improve outcomes for all stakeholders. The role is heavily cross-functional, requiring good communication skills.", 
+      "skills": ["SQL", "PowerBI", "Python"],
+      "responsibilities": ["Mine internal data sets", "Analyze sales patterns","Communicate insights to business teams"],
+      "niceToHave": ["Agriculture domain knowledge", "Excel modeling skills"]
+    },
+    {
+      "id": 9, 
+      "companyName": "RIIDE",
+      "roleName": "Android Developer",
+      "city": "Dar es Salaam",
+      "country": "Tanzania",
+      "aboutCompany": "RIIDE operates Tanzania's leading ride-sharing app, connecting thousands of drivers with riders everyday across Tanzania. Our engineering team builds performant mobile apps scaled for emerging market environments.", 
+      "aboutRole": "As an Android Developer, you will own development of new features for our rider and driver apps used everyday across Dar es Salaam. Expect plenty of complexity and scale challenges to solve.",  
+      "skills": ["Java", "Android SDK"],
+      "responsibilities": ["Build reactive native UIs", "Integrate with backend services", "Write test cases"],
+      "niceToHave": ["Experience with maps integrations", "Payment gateway integration knowledge"]
+    },
+    {
+      "id": 10,
+      "companyName": "DigiShop",
+      "roleName": "iOS Developer",  
+      "city": "Kampala",
+      "country": "Uganda",
+      "aboutCompany": "DigiShop is Uganda's #1 B2C ecommerce company, operating Jumia's core portfolio of consumer shopping apps tailored specifically for the Ugandan market.",  
+      "aboutRole": "As an iOS Developer, you will craft bespoke iOS apps interfaces for DigiShop's customers shopping on iPhones and iPads. Get ready to deliver buttery smooth ecommerce experiences specifically for Ugandan users.",
+      "skills": ["Swift", "iOS SDK"],
+      "responsibilities": ["Implement pixel-perfect UI designs", "Integrate with ecommerce backend services", "Write test cases"],
+      "niceToHave": ["Familiarity with mobile ad networks", "Experience with CoreData"]
+    },
+    {
+        "id": 11,
+        "companyName": "FarmFresh",
+        "roleName": "Product Manager",
+        "city": "Nairobi",
+        "country": "Kenya",
+        "aboutCompany": "FarmFresh operates a digital platform connecting farmers directly to retailers, optimizing fresh food supply chains using technology.",
+        "aboutRole": "As a product manager at FarmFresh, you will be at the epicenter of solving supply chain inefficiencies in the food ecosystem. Expect plenty of complexity in this role!",  
+        "skills": ["User research", "Writing user stories", "Data analysis"],
+        "responsibilities": ["Plan product features based on research", "Prioritize product backlogs","Conduct user tests"],
+        "niceToHave": ["Experience in agriculture", "Understanding of B2B ecosystems"]
+      },
+      {
+        "id": 12,
+        "companyName": "SafeMoto", 
+        "roleName": "Engineering Manager",
+        "city": "Kampala",
+        "country": "Uganda",  
+        "aboutCompany": "SafeMoto builds IoT and mobile solutions for motorcycle ride-hailing fleets to improve safety and access across Kampala and major Ugandan cities.",
+        "aboutRole": "We are seeking an entrepreneurial engineering manager to lead a team building innovative safety products tailored specifically for Ugandan motorcycle taxi networks.",
+        "skills": ["Personnel management", "Agile methodologies", "JavaScript"],
+        "responsibilities": ["Hire and cultivate engineers", "Architect complex systems", "Deliver products quickly"],
+        "niceToHave": ["Experience working in Uganda", "Understanding of hardware constraints"]
+      },
+      {
+        "id": 13,
+        "companyName": "Nzuri Jobs",
+        "roleName": "Full Stack Developer",
+        "city": "Kigali",
+        "country": "Rwanda", 
+        "aboutCompany": "Nzuri Jobs operates Rwanda's largest online jobs portal, connecting talented candidates with employers across every industry.",
+        "aboutRole": "We are looking for a Full Stack Developer to build new features for our platform leveraged by 100,000+ monthly active job seekers in Rwanda.",
+        "skills": ["Ruby on Rails","JavaScript","AWS services"],
+        "responsibilities": ["Architect reusable components ", "Implement pixel-perfect UI enhancements", "Write clean, testable code"],
+        "niceToHave": ["Familiarity with recruitment domain", "Experience with search relevancy tuning"]
+      },
+      {
+        "id": 14,
+        "companyName": "SmartFarm",
+        "roleName": "Cloud Architect",  
+        "city": "Nairobi",
+        "country": "Kenya",
+        "aboutCompany": "SmartFarm builds sensors, analytics software, and intelligence tools to help farmers across Africa maximize crop yields sustainably using precision agriculture techniques.",
+        "aboutRole": "As a Cloud Architect, you will own design and implementation of highly reliable and scalable infrastructure for massive sensor data pipelines analyzed by our machine learning models to deliver insights to farmers.",
+        "skills": ["AWS", "DevOps culture"], 
+        "responsibilities": ["Design cloud data architectures", "Ensure high system availability","Manage infrastructure costs"],
+        "niceToHave": ["Experience with IoT data", "Knowledge of latest cloud services"] 
+      },
+      {
+        "id": 15,
+        "companyName": "Wakulima Market",
+        "roleName": "Platform Engineer",
+        "city": "Nairobi", 
+        "country": "Kenya",
+        "aboutCompany": "Wakulima Market builds digital services for retail vendors across informal settlements in Kenya to help them manage procurement, financing, and inventory digitally.",
+        "aboutRole": "As a Platform Engineer, you will build APIs and services used daily by tens of thousands of small business owners across Nairobi to streamline and improve their operations.",
+        "skills": ["Golang", "Microservices", "NoSQL databases"],
+        "responsibilities": ["Design and build performant APIs", "Implement robust microservices", "Monitor services for performance"],
+        "niceToHave": ["Startup experience", "Understanding of retail supply chains"]
+      },
+      {
+        "id": 16, 
+        "companyName": "FarmTasks",
+        "roleName": "Backend Engineer",
+        "city": "Kampala",
+        "country": "Uganda", 
+        "aboutCompany": "FarmTasks provides agricultural drone services and aerial intelligence to commercial farms across Uganda to help monitor crop health, track issues, and improve planning using geospatial data.",
+        "aboutRole": "As a Backend Engineer, you will build services to manage massive drone imagery datasets and extract insights for farmers to digest easily through our mobile applications.",
+        "skills": ["Python", "GIS ", "PostgreSQL"],
+        "responsibilities": ["Develop scalable drone data APIs", "Process geospatial image data", "Productionize machine learning models"],
+        "niceToHave": ["Cloud infrastructure knowledge", "Interest in aerospace and agriculture"]
+      },
+      {
+        "id": 17,
+        "companyName": "EasyMatatu",
+        "roleName": "Senior Android Developer", 
+        "city": "Nairobi",
+        "country": "Kenya",
+        "aboutCompany": "EasyMatatu operates mass transit booking platforms, payment systems, and bus management tools to connect commuters across Nairobi with reliable, affordable transport operators.",
+        "aboutRole": "We are looking for a Senior Android Developer to lead builds for our daily active rider applications used by over 500K Nairobians to book, pay and rate matatus across the city.",
+        "skills": ["Java", "Reactive Programming"], 
+        "responsibilities": ["Architect modular Kotlin applications", "Implement features for low-powered devices", "Improve app efficiency"],
+        "niceToHave": ["Team management skills", "Public transport domain knowledge"]
+      },
+      {
+        "id": 18,
+        "companyName": "RedGreen Agriculture",
+        "roleName": "Embedded Systems Engineer",
+        "city": "Kigali", 
+        "country": "Rwanda",
+        "aboutCompany": "RedGreen builds customized agricultural equipment for smallholder farmers to improve productivity and reduce waste with technology tailored for African usage conditions.",
+        "aboutRole": "As an Embedded Systems Engineer, you will develop firmware and embedded software to control sensors, motors, and other integrated devices within custom farming equipment used widely across Rwanda.",
+        "skills": ["C/C++", "Electrical engineering fundamentals"],
+        "responsibilities": ["Design reliable embedded applications", "Develop device drivers", "Validate device performance"],
+        "niceToHave": ["Interest in robotics", "Experience with precision farming techniques"]
+      },
+      {  
+        "id": 19,
+        "companyName": "BRCK",
+        "roleName": "Firmware Engineer",
+        "city": "Nairobi",
+        "country": "Kenya",
+        "aboutCompany": "BRCK builds rugged wifi routers, secure tablets, modular cell and sensor towers, and other connectivity infrastructure tailored for reliability in harsh emerging market environments.",
+        "aboutRole": "As a Firmware Engineer at BRCK, you will help develop firmware for a range of communication, battery, sensor, and storage devices specifically designed for reliability, safety, usability and affordability across Africa." ,
+        "skills": ["C/C++", "Embedded Linux"],
+        "responsibilities": ["Develop core device firmware", "Integrate with cloud APIs", "Validate electrical interfaces"],
+        "niceToHave": ["Hardware debugging skills", "Interest in electronics"] 
+      }
+]
 }
