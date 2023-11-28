@@ -1,0 +1,82 @@
+{
+    "jobListings": [
+        {
+          "companyId": 1001,
+          "companyName": "Tech Innovators Inc.",
+          "role": "Software Engineer",
+          "location": "San Francisco, CA",
+          "jobDescription": {
+            "roleDescription": "Join our dynamic team as a Software Engineer and contribute to cutting-edge projects.",
+            "qualifications": [
+              "Bachelor's degree in Computer Science or related field",
+              "3+ years of experience in software development",
+              "Strong proficiency in JavaScript and Angular",
+              "Excellent problem-solving skills"
+            ],
+            "responsibilities": [
+              "Design and implement scalable software solutions",
+              "Collaborate with cross-functional teams",
+              "Troubleshoot and debug issues",
+              "Contribute to code reviews"
+            ],
+            "niceToHave": [
+              "Experience with cloud technologies",
+              "Knowledge of DevOps practices",
+              "Familiarity with UX/UI design principles"
+            ]
+          }
+        },
+        {
+          "companyId": 1002,
+          "companyName": "Data Insights Co.",
+          "role": "Data Analyst",
+          "location": "Seattle, WA",
+          "jobDescription": {
+            "roleDescription": "Seeking a Data Analyst to analyze and interpret data, providing valuable insights to drive business decisions.",
+            "qualifications": [
+              "Bachelor's degree in Statistics, Mathematics, or related field",
+              "Experience with data visualization tools",
+              "Strong analytical and problem-solving skills",
+              "Proficiency in SQL and Excel"
+            ],
+            "responsibilities": [
+              "Collect and analyze data from various sources",
+              "Create visualizations and reports",
+              "Collaborate with stakeholders to define data requirements",
+              "Present findings to key decision-makers"
+            ],
+            "niceToHave": [
+              "Experience with business intelligence tools",
+              "Knowledge of data warehousing concepts",
+              "Programming skills in Python or R"
+            ]
+          }
+        },
+        {
+          "companyId": 1003,
+          "companyName": "EcoTech Solutions Ltd.",
+          "role": "Environmental Scientist",
+          "location": "Portland, OR",
+          "jobDescription": {
+            "roleDescription": "Exciting opportunity for an Environmental Scientist to contribute to ecological research and conservation.",
+            "qualifications": [
+              "Master's degree in Environmental Science or related field",
+              "Fieldwork experience in ecology and biodiversity studies",
+              "Data analysis skills using statistical software",
+              "Strong written and verbal communication skills"
+            ],
+            "responsibilities": [
+              "Conduct field surveys and experiments",
+              "Analyze and interpret ecological data",
+              "Collaborate with research teams",
+              "Contribute to scientific publications"
+            ],
+            "niceToHave": [
+              "Experience with GIS and remote sensing",
+              "Knowledge of environmental modeling",
+              "Passion for conservation efforts"
+            ]
+          }
+        }
+    ]
+}

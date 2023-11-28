@@ -1,1 +1,12 @@
-<p>listings works!</p>
+@for (job of jobs; track job.companyId){
+    <div class="card">
+        <div class="card-header">
+            {{job.companyName}} 
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">{{job.role}}</h5>
+          <p class="card-text">{{job.location}}</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+}

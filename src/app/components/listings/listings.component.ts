@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import jsonData from '../../../assets/data/jobs.json'
 
 @Component({
   selector: 'app-listings',
@@ -9,5 +10,5 @@ import { CommonModule } from '@angular/common';
   styleUrl: './listings.component.css'
 })
 export class ListingsComponent {
-
+    jobs: any[] = jsonData.jobListings;
 }
