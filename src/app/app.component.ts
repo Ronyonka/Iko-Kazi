@@ -4,6 +4,7 @@ import { RouterOutlet,RouterModule } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
 import { ListingsComponent } from './components/listings/listings.component';
 
+
 @Component({
   selector: 'app-root',
   standalone: true,

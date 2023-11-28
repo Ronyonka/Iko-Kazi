@@ -227,6 +227,126 @@
         "skills": ["C/C++", "Embedded Linux"],
         "responsibilities": ["Develop core device firmware", "Integrate with cloud APIs", "Validate electrical interfaces"],
         "niceToHave": ["Hardware debugging skills", "Interest in electronics"] 
-      }
+      },
+      {
+        "id": 20,
+        "companyName": "AgriTech Ltd",
+        "roleName": "Data Scientist",
+        "city": "Kampala",
+        "country": "Uganda",
+        "aboutCompany": "AgriTech builds machine learning solutions for commercial farms to optimize operations, reduce waste, and improve crop yield predictions using agricultural data analytics.",
+        "aboutRole": "We are seeking a Data Scientist to help create value from agricultural datasets. You will develop predictive models and data experiments to derive actionable insights for commercial farm clients across Uganda.",
+        "skills": ["Python", "Crop Science", "SQL"],
+        "responsibilities": ["Build ML models to power products", "Identify valuable data sources", "Solution design, development and deployment"], 
+        "niceToHave": ["AWS machine learning", "Experience with IoT data"]
+      },
+      {
+        "id": 21,
+        "companyName": "SafeBikes",
+        "roleName": "Tech Lead Engineer ",
+        "city": "Dar es Salaam",
+        "country": "Tanzania", 
+        "aboutCompany": "SafeBikes operates an innovative IoT + bike-sharing platform making cycling safe, fun and affordable across Dar es Salaam through smart bikes and docks powered by technology.",
+        "aboutRole": "We are looking for an experienced Tech Lead Engineer to own architecture and lead back end design for the technology enabling 10,000+ daily bike rides across Tanzania's commercial capital.",
+        "skills": ["AWS cloud architecture", "Microservice patterns"],
+        "responsibilities": ["Lead a team of developers", "Design highly scalable platform", "Deliver exceptional technologies"],
+        "niceToHave": ["Startup experience", "Cycling enthusiasts welcome!"]
+      },
+      {
+        "id": 22,
+        "companyName": "FarmLink",
+        "roleName": "Internal Tools Engineer",
+        "city": "Nairobi",
+        "country": "Kenya",
+        "aboutCompany": "FarmLink develops farmer-centered software, fintech tools, and digitized supply chain systems for agricultural enterprises across Africa to promote efficiency and food security.",
+        "aboutRole": "We are seeking an Internal Tools Engineer to customize and enhance operations tools tailored for the needs of our coworkers, partners and internal systems. Creativity and collaboration skills are key in this role.",  
+        "skills": ["JavaScript", "React", "Node.js"], 
+        "responsibilities": ["Build internal operations tools", "Automate manual processes", "Improve employee workflows"],
+        "niceToHave": ["Familiarity with monorepos", "Comfort with ambiguous assignments"]
+      },
+      {
+        "id": 23, 
+        "companyName": "Ampion Ventures",
+        "roleName": "Investment Partner, Fintech",
+        "city": "Nairobi",
+        "country": "Kenya",  
+        "aboutCompany": "Ampion is a venture capital fund backing early stage financial technology innovators solving pressing problems in Africa through creative apps of blockchain, decentralized finance and embedded fintech.",
+        "aboutRole": "We are seeking an Investment Partner to identify promising early stage fintech opportunities across the continent, conduct diligence and support portfolio companies through value-add guidance.",
+        "skills": ["Financial analysis", "Investment memos", "Portfolio management"],
+        "responsibilities": ["Deal sourcing and due diligence", "Market research", "Portfolio support and scaling"],
+        "niceToHave": ["Experience investing in Africa", "Working knowledge of blockchain"]
+      },
+      {
+        "id": 24,
+        "companyName": "FarmerCentric",
+        "roleName": "UX/UI Designer",  
+        "city": "Kigali",
+        "country": "Rwanda", 
+        "aboutCompany": "FarmerCentric builds human-centered tools for value chain players in developing agriculture markets to fix systems-level problems through thoughtful design.",
+        "aboutRole": "We are looking for an exceptional UX/UI Designer to create intuitive digital experiences for agricultural stakeholders across Rwanda. This role requires deep user and client empathy to craft effective solutions.",
+        "skills": ["User research", "Interaction design", "Visual design"],
+        "responsibilities": ["Conduct design research", "Transform insights into interfaces", "Prototype and user test"],
+        "niceToHave": ["Agriculture experience", "Analytics knowledge "]
+      },
+      {
+        "id": 25,
+        "companyName": "DATA AFRICA",
+        "roleName": "Data Engineer",
+        "city": "Lagos",
+        "country": "Nigeria",  
+        "aboutCompany": "DATA AFRICA is an AI for social good startup leveraging satellite, drone and ground sensor data to provide vital infrastructure insights for public sector planning across West Africa. Our datasets curate geospatial intelligence to guide economic development.",  
+        "aboutRole": "We seek a talented Data Engineer to help build a platform making Africa's earth observation data accessible, understandable and actionable for sustainability initiatives.",
+        "skills": ["Python", "GIS", "AWS"], 
+        "responsibilities": ["Develop and maintain data pipelines", "Productionalize machine learning models", "Support open source modules"],
+        "niceToHave": ["Passion for environmental conservation!"]
+      },
+      {
+        "id": 26,  
+        "companyName": "WasteCo",
+        "roleName": "Platform Engineer",
+        "city": "Accra",
+        "country": "Ghana",
+        "aboutCompany": "WasteCo develops smart waste collection tools and integrated city sanitation systems to tackle unmanaged waste across rapidly expanding West African cities using technology for social impact..", 
+        "aboutRole": "We are seeking a Platform Engineer to architect well-designed services powering transparent waste collection across Accra and streamlining relationships between households, waste collectors and the local government.", 
+        "skills": ["Go", "Microservices", "React"],
+        "responsibilities": ["Design and build core platform APIs", "Develop responsive front ends", "Instrument telemetry"], 
+        "niceToHave": ["Smart city experience", "Hardware integration skills"]
+      },
+      {
+        "id": 27,
+        "companyName": "Kilimo Grow", 
+        "roleName": "Senior Full Stack Engineer",
+        "city": "Kigali", 
+        "country": "Rwanda",
+        "aboutCompany": "Kilimo Grow builds digital farmer services specializing in connecting smallholder farmers across Rwanda to reliable markets, affordable inputs and global best practices for sustainable livelihoods.",
+        "aboutRole": "We seek an experienced Full-stack Engineer to build apps enhancing market access for thousands of farmers across Rwanda. This role combines critical thinking with coding skills tailored for emerging agricultural ecosystems.",
+        "skills": ["TypeScript", "MongoDB", "Node.js"],
+        "responsibilities": ["Spearhead development of farmer tools", "Implement complex features", "Interface with remote field teams"],
+        "niceToHave": ["Agriculture technology experience", "East Africa expertise"]
+      },
+      {
+        "id": 28,
+        "companyName": "SafeKababa", 
+        "roleName": "VP Engineering",
+        "city": "Kampala",
+        "country": "Uganda", 
+        "aboutCompany": "SafeKababa builds fleet management tools for motorcycle taxi operators in Kampala using mobile phones, IoT and real-time data analytics to promote driver welfare, safety and transparency.",
+        "aboutRole": "We are seeking an entrepreneurial VP Engineering to build a world-class team that moves fast and builds robust technology tailored for motorcycle taxi networks serving millions in Kampala daily.",
+        "skills": ["Mobile engineering", "Team leadership"],
+        "responsibilities": ["Recruit and manage engineers", "Set technical vision", "Foster innovation"],
+        "niceToHave": ["Emerging markets mobility experience", "Policy experience"]
+      },
+      {
+        "id": 29,
+        "companyName": "Farmer's Choice Ltd",  
+        "roleName": "Associate, Digital Transformation",
+        "city": "Nairobi",
+        "country": "Kenya",  
+        "aboutCompany": "Farmer's Choice is East Africa's leading agricultural commodities supplier, connecting thousands of farmers to global markets. Our operations span food processing, logistics, exports and trade financing across the region.",
+        "aboutRole": "We are embarking on an enterprise-wide digital transformation initiative to build supply chain visibility, improve operations, reduce costs and enable new services through targeted adoption of disruptive and sustainable technology across the agribusiness.",
+        "skills": ["Stakeholder management", "Project management", "Commercial mindset"],
+        "responsibilities": ["Conduct opportunity assessments", "Research technology solutions", "Support implementations"],
+        "niceToHave": ["Consulting experience", "Agriculture industry exposure"]
+      } 
 ]
 }

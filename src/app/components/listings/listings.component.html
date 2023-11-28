@@ -1,4 +1,4 @@
-@for (job of jobs; track job.id){
+@for (job of paginatedData; track job.id){
   <br>
     <div class="card">
         <div class="card-header">
@@ -12,3 +12,9 @@
       </div>
       <br>
 }
+<app-pagination 
+  [totalItems]="totalItems"
+  [itemsPerPage]="itemsPerPage"
+  [currentPage]="currentPage"
+  (onClick)="changePage($event)"
+  ></app-pagination>
