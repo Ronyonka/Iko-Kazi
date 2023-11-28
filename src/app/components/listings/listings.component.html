@@ -1,4 +1,30 @@
-<app-filter></app-filter>
+<ul class="nav justify-content-end">
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Company</a>
+    <ul class="dropdown-menu">
+      @for (companyName of uniqueCompanyNames; track companyName){
+        <li><a class="dropdown-item" [ngClass]="{'active': companyName==companyNameFilter}" (click)="onCompanyNameFilterChange(companyName)">{{companyName}}</a></li>
+      }
+    </ul>
+  </li>
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Job Type</a>
+    <ul class="dropdown-menu">
+      @for (jobType of uniqueJobTypes; track jobType){
+        <li><a class="dropdown-item" [ngClass]="{'active': jobType==jobTypeFilter}" (click)="onJobTypeFilterChange(jobType)">{{jobType}}</a></li>
+      }
+    </ul>
+  </li>
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Location</a>
+    <ul class="dropdown-menu">
+      @for (location of uniqueLocations; track location){
+        <li><a class="dropdown-item" [ngClass]="{'active': location==locationFilter}" (click)="onLocationFilterChange(location)">{{location}}</a></li>
+      }
+    </ul>
+  </li>
+
+</ul>
 
 @for (job of paginatedData; track job.id){
   <br>
