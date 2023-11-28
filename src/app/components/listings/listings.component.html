@@ -1,3 +1,4 @@
+
 <ul class="nav justify-content-end">
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Company</a>
@@ -45,7 +46,6 @@
   <div class="col-4"></div>
   <div class="col-4">
     <div class="form-group">
-      <label for="sortOptions" class="form-label">Sort by:</label>
       <select class="form-select" id="sortOptions" [(ngModel)]="selectedSortOption" (change)="onSortOptionChange()">
         <option [ngValue]="null" selected>Relevance</option>
         <option [ngValue]="'titleAsc'">Job Title: Ascending</option>
