@@ -5,11 +5,12 @@ import { RouterModule } from '@angular/router';
 import { JobsService } from '../../services/jobs.service';
 import { PaginationComponent } from '../pagination/pagination.component';
 import { FilterComponent } from '../filter/filter.component';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-listings',
   standalone: true,
-  imports: [CommonModule, RouterModule, PaginationComponent, FilterComponent],
+  imports: [CommonModule, RouterModule, PaginationComponent, FilterComponent, FormsModule],
   templateUrl: './listings.component.html',
   styleUrl: './listings.component.css'
 })
@@ -28,6 +29,8 @@ export class ListingsComponent {
     uniqueJobTypes: string[] = [];
     uniqueCompanyNames: string[] = [];
 
+    // Sorting
+    selectedSortOption: string | null = null;
 
     constructor(){
       this.jobs = this.jobsService.getAllJobListings();
@@ -90,4 +93,50 @@ export class ListingsComponent {
       this.companyNameFilter = companyName;
       this.currentPage = 1;
     }
+    onSortOptionChange() {
+      switch (this.selectedSortOption) {
+        case 'titleAsc':
+          this.sortJobsByTitle(true);
+          break;
+        case 'titleDesc':
+          this.sortJobsByTitle(false);
+          break;
+        case 'dateAsc':
+          this.sortJobsByDate(true);
+          break;
+        case 'dateDesc':
+          this.sortJobsByDate(false);
+          break;
+        default:
+          // Handle the default case (Relevance)
+          break;
+      }
+    }
+  
+  // Function to sort jobs based on job title alphabetically
+  sortJobsByTitle(ascending: boolean) {
+    this.jobs.sort((a, b) => {
+      const titleA = a.roleName.toUpperCase();
+      const titleB = b.roleName.toUpperCase();
+      if (ascending) {
+        return titleA.localeCompare(titleB);
+      } else {
+        return titleB.localeCompare(titleA);
+      }
+    });
+  }
+
+  // Function to sort jobs based on date posted
+  sortJobsByDate(ascending: boolean) {
+    this.jobs.sort((a, b) => {
+      const dateA = new Date(a.dateAdded);
+      const dateB = new Date(b.dateAdded);
+      if (ascending) {
+        return dateA.getTime() - dateB.getTime();
+      } else {
+        return dateB.getTime() - dateA.getTime();
+      }
+    });
+  }
 }
+
