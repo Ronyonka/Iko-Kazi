@@ -1,6 +1,7 @@
 # IkoKazi
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.3.
+Welcome to Iko Kazi, your go-to platform for job hunting and career exploration! This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.3 to provide a seamless and responsive experience across different devices. You can explore the latest job listings, filter by preferences, and submit applications effortlessly. Stay connected with the job market and take the next step in your career journey. Check out Iko Kazi now at [https://ronyonka.github.io/Iko-Kazi/](https://ronyonka.github.io/Iko-Kazi/) and embark on a path to new opportunities!
+
 This README.md file provides a step-by-step guide on setting up and running the Angular project "Iko-Kazi." Follow the instructions below to get your development environment up and running.
 
 ## 1. Prerequisites
