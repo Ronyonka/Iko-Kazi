@@ -18,7 +18,7 @@ import { FormsModule } from '@angular/forms';
 export class ListingsComponent {
     itemsPerPage = 7;
     currentPage= 1;
-    totalItems = 7;
+    totalItems = 29;
     hidePagination=false;
     jobs: any[] = [];
     jobsService: JobsService = inject(JobsService);
@@ -43,6 +43,7 @@ export class ListingsComponent {
       this.uniqueLocations = this.getUniqueValues('city');
       this.uniqueJobTypes = this.getUniqueValues('jobType');
       this.uniqueCompanyNames = this.getUniqueValues('companyName');
+      
     }
 
     private getUniqueValues(key: string): string[] {
@@ -66,15 +67,15 @@ export class ListingsComponent {
 
       if (this.locationFilter) {
         filteredJobs = filteredJobs.filter(job => job.city === this.locationFilter);
-        this.itemsPerPage = filteredJobs.length
+        // this.itemsPerPage = filteredJobs.length
       }
       if (this.jobTypeFilter){
         filteredJobs =  filteredJobs.filter(job => job.jobType === this.jobTypeFilter);
-        this.itemsPerPage = filteredJobs.length
+        // this.itemsPerPage = filteredJobs.length
       }
       if (this.companyNameFilter) {
         filteredJobs = filteredJobs.filter(job => job.companyName === this.companyNameFilter);
-        this.itemsPerPage = filteredJobs.length
+        // this.itemsPerPage = filteredJobs.length
       }
 
       const start = (this.currentPage -1)* (this.itemsPerPage)
