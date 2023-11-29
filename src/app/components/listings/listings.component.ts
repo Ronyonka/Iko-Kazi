@@ -18,7 +18,7 @@ import { FormsModule } from '@angular/forms';
 export class ListingsComponent {
     itemsPerPage = 7;
     currentPage= 1;
-    totalItems = 7;
+    totalItems = 29;
     hidePagination=false;
     jobs: any[] = [];
     jobsService: JobsService = inject(JobsService);
